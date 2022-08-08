@@ -20,4 +20,31 @@ function displayTeams(teams) {
   }
 }
 
+function $(selector) {
+  return document.querySelector(selector);
+}
+
+function submitform(e) {
+  e.preventDefault();
+  var promotion = $("input[name=promotion]").value;
+  var members = $("input[name=members]").value;
+  var name = $("input[name=name]").value;
+  var url = $("input[name=url]").value;
+
+  var team = {
+    promotion: promotion,
+    members: members,
+    name: name,
+    url: url,
+  };
+  console.warn("adauga in teams.json", JSON.stringify(team));
+}
+
+function initEvents() {
+  var form = document.getElementById("editForm");
+  console.warn("form", form);
+  form.addEventListener("submit", submitform);
+}
+
 loadTeams();
+initEvents();
