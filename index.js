@@ -26,10 +26,10 @@ function $(selector) {
 
 function submitform(e) {
   e.preventDefault();
-  var promotion = $("input[name=promotion]").value;
-  var members = $("input[name=members]").value;
-  var name = $("input[name=name]").value;
-  var url = $("input[name=url]").value;
+  const promotion = $("input[name=promotion]").value;
+  const members = $("input[name=members]").value;
+  const name = $("input[name=name]").value;
+  const url = $("input[name=url]").value;
 
   var team = {
     promotion: promotion,
@@ -41,7 +41,7 @@ function submitform(e) {
 }
 
 function initEvents() {
-  var form = document.getElementById("editForm");
+  const form = document.getElementById("editForm");
   console.warn("form", form);
   form.addEventListener("submit", submitform);
 }
