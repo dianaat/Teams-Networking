@@ -31,7 +31,7 @@ function submitform(e) {
   const name = $("input[name=name]").value;
   const url = $("input[name=url]").value;
 
-  var team = {
+  const team = {
     promotion: promotion,
     members: members,
     name: name,
