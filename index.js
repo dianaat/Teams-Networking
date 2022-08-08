@@ -1,9 +1,10 @@
 function loadTeams() {
   fetch("data/teams.json")
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (teams) {
+    .then((r) => r.json())
+    //.then(function (response) {
+    // return response.json();
+    //  })
+    .then((teams) => {
       displayTeams(teams);
     });
 }
