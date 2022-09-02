@@ -4,4 +4,4 @@ Teams job related networking (linkedin, github)
 
 ## Live
 
-[Demo](https://Teams-Networking)
+[Demo](https://dianaat.github.io/Teams-Networking/)
