@@ -1,13 +1,11 @@
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="style.css"/>
     <title>Teams-Networking</title>
   </head>
 
-  <form action="" method="post" id="editForm">
+  <form action="" method="post" id="editForm" onsubmit="return false;">
     <body>
       <div>
         <h2>Teams Networking</h2>
@@ -20,6 +18,7 @@
             <th>Members</th>
             <th>Project Name</th>
             <th>Project URL</th>
+            
           </tr>
         </thead>
 
@@ -54,10 +53,13 @@
             <td>
               <input type="text" placeholder="Enter url" name="url" required />
             </td>
+            
             <td>
-              <button type="submit">💾</button>
+              <button type="submit" title="Save">💾</button>
+              <button type="reset" title="Reset">🔃</button>
             </td>
           </tr>
+         
         </tfoot>
       </table>
     </body>

@@ -1,3 +1,9 @@
 table {
-  width: 50%;
+  width: 100%;
+}
+input:not([type="image"]) {
+  box-sizing: border-box;
+}
+#editForm tfoot input[type="text"]{
+  width: 100%;
 }
